@@ -11,6 +11,9 @@
 .display-felx{
     display: flex;
 }
+.text-primary{
+    color: #FF900E;
+}
 
 /* dark 02 */
 .text-gray{
@@ -36,6 +39,20 @@
     border: 0;
 
 }
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section {
+    margin-top: 130px;
+}
+.section-title{
+    font-size: 2.8rem ;
+    font-weight: 700;
+}
+
 
 .navbar{
     justify-content: space-between;
@@ -76,9 +93,44 @@
     width: 100%;
 }
 
+.teams{
+    align-items: center;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+    gap: 24px;
+}
+
+.our-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+
+
+#Quick-list{
+    font-weight: 500;
+}
+
 @media screen and (max-width: 567px) {
-    .navbar , .nav-link{
+    .navbar , .nav-link, .teams{
         flex-direction: column;
 
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width :568) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 50px;
     }
 }
