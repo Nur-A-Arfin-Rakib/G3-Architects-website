@@ -133,7 +133,22 @@ main > section {
     font-size: 1.25rem;
     
 }
+.image-section img{
+    width: 100%;
+}
 
+#badge{
+    padding: 45px 43px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -50px;
+    margin-top: -80px;
+}
+
+#year{
+    font-size: 65px;
+    font-weight: 700px;
+}
 .fact-container{
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
@@ -175,10 +190,16 @@ main > section {
 }
 
 @media screen and (max-width: 567px) {
-    .navbar , .nav-link, .teams{
+    .navbar , .nav-link, .teams , .Features{
         flex-direction: column;
 
     }
+    #badge{
+        margin-top: 20px;
+        margin-left: 20px;
+      
+    }
+
     .team-img-container, .sponsors-companies {
         grid-template-columns: repeat(1, 1fr);
     }
